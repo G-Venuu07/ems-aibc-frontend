@@ -9,7 +9,7 @@ function Dashboard(){
             try{
                   const response = await api.get("/employee/get");
                   setUsers(response.data);
-            }catch(err){
+            }catch(error){
                   alert("Something went Wrong..");
             }
       }
